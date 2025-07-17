@@ -192,57 +192,7 @@ Monitor team efficiency:
 - **Privacy Compliance**: GDPR and retail privacy standards
 - **Audit Logging**: Complete activity tracking and monitoring
 
-## 📈 Roadmap
 
-### **Phase 1: Core Intelligence** ✅
-- Multi-modal AI agent
-- Camera feed integration
-- Basic analytics dashboard
 
-### **Phase 2: Advanced Analytics** 🚧
-- Predictive modeling
-- Customer behavior analysis
-- Advanced computer vision
-
-### **Phase 3: Enterprise Features** 📋
-- Multi-tenant architecture
-- Advanced reporting
-- API integrations
-- Mobile applications
-
-### **Phase 4: AI Automation** 🔮
-- Automated decision making
-- Smart alerts and notifications
-- Autonomous store optimization
-
-## 🤝 Contributing
-
-We welcome contributions to RetailX! Whether you're fixing bugs, adding features, or improving documentation, your help makes RetailX better for everyone.
-
-### **How to Contribute**
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-### **Development Guidelines**
-- Follow TypeScript best practices
-- Write comprehensive tests
-- Update documentation for new features
-- Ensure responsive design compatibility
-
-## 📄 License
-
-This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
-
-## 🆘 Support
-
-- **Documentation**: [docs.retailx.ai](https://docs.retailx.ai)
-- **Community**: [Discord Server](https://discord.gg/retailx)
-- **Issues**: [GitHub Issues](https://github.com/your-org/retailx/issues)
-- **Email**: support@retailx.ai
-
----
 
 **RetailX** - Transforming retail operations through intelligent AI agents 🛍️🤖
