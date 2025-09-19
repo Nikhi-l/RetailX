@@ -2,49 +2,64 @@
 
 import { Button } from '@/components/ui/button'
 import Logo from '@/components/logo'
-import { Zap, Play, Link, Eye, TrendingUp, Camera, BarChart3, CheckCircle } from 'lucide-react'
+import {
+  Sparkles,
+  Play,
+  Glasses,
+  Mic,
+  Headset,
+  ClipboardCheck,
+  ShieldCheck,
+  CheckCircle
+} from 'lucide-react'
 import NextLink from 'next/link'
 import Image from 'next/image'
 
 export function MarketingLanding() {
   const steps = [
     {
-      icon: Link,
-      title: 'CONNECT',
-      description: 'We securely link to your existing camera system in minutes. Our platform is compatible with 99% of modern IP cameras.',
+      icon: Glasses,
+      title: 'EQUIP',
+      description:
+        'Outfit your associates with lightweight RetailX smart glasses that discreetly capture every shopper conversation and interaction.',
       colorClass: 'bg-orange-400'
     },
     {
-      icon: Eye,
-      title: 'ANALYZE',
-      description: 'Our AI anonymously analyzes video feeds in real-time, identifying shopper behavior patterns without collecting any personal data.',
+      icon: Mic,
+      title: 'GUIDE',
+      description:
+        'Our in-glass AI agent listens in real time, prompting the right greeting, needs assessment questions, and product suggestions while the guest is engaged.',
       colorClass: 'bg-orange-500'
     },
     {
-      icon: TrendingUp,
-      title: 'OPTIMIZE',
-      description: 'Access your intuitive dashboard. Visualize heatmaps, analyze departmental performance, and get clear recommendations to improve your store\'s performance.',
+      icon: ClipboardCheck,
+      title: 'ELEVATE',
+      description:
+        'Instantly generate scorecards, coaching clips, and training playbooks so every visit meets brand standards across all locations.',
       colorClass: 'bg-orange-600'
     }
   ];
 
   const features = [
     {
-      icon: Camera,
-      title: 'Full-Store Intelligence',
-      description: 'Go beyond door counters. Our AI analyzes your entire floor space to understand customer paths, dwell times, and bottlenecks.',
+      icon: Headset,
+      title: 'Real-Time Conversation Coaching',
+      description:
+        'Deliver prompts on greetings, qualification, and add-ons directly through the glasses so every associate knows what to say next.',
       gradient: 'from-orange-400 to-orange-500'
     },
     {
-      icon: TrendingUp,
-      title: 'The Physical Store Funnel',
-      description: 'For the first time, measure your physical funnel: Walk-Bys → Views → Engagements → Sales. Pinpoint exactly where to focus your efforts.',
+      icon: Mic,
+      title: 'Conversation Intelligence & Insights',
+      description:
+        'Turn recordings into searchable transcripts, highlight objections, and surface missed opportunities for each store and associate.',
       gradient: 'from-orange-500 to-orange-600'
     },
     {
-      icon: BarChart3,
-      title: 'Drive Real ROI',
-      description: 'Make data-backed decisions on layout, merchandising, and staffing to increase conversion rates and boost average transaction value.',
+      icon: ShieldCheck,
+      title: 'Continuous Quality Assurance',
+      description:
+        'Benchmark locations, certify readiness, and share best practices while ensuring every shopper receives a consistent, premium experience.',
       gradient: 'from-orange-600 to-orange-700'
     }
   ];
@@ -104,21 +119,26 @@ export function MarketingLanding() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left animate-fade-in-up">
               <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 dark:text-white leading-tight mb-6">
-                Unlock the{' '}
+                Deliver{' '}
                 <span className="bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent animate-pulse">
-                  Hidden Revenue
+                  Quality-Assured Service
                 </span>{' '}
-                in Your Store
+                on Every Floor
               </h1>
-              
-              <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-                Transform your physical store into an intelligent, data-driven space. RetailX uses your existing security cameras and advanced AI to give you eCommerce-level analytics for your brick-and-mortar locations.
+
+              <p
+                className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed animate-fade-in-up"
+                style={{ animationDelay: '0.2s' }}
+              >
+                RetailX Glass captures every customer conversation through smart glasses, guiding associates in the moment and
+                generating the coaching they need afterwards. We ensure your team greets, guides, and closes exactly the way you
+                expect—store after store.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-8 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
                 <a href="https://calendly.com/gnikhil335/30min" target="_blank" rel="noopener noreferrer">
                   <button className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl animate-pulse-glow">
-                    Book a Demo
+                    Book a Smart Glass Demo
                   </button>
                 </a>
                 <NextLink href="/chat">
@@ -129,10 +149,17 @@ export function MarketingLanding() {
                 </NextLink>
               </div>
 
-              <div className="flex flex-col sm:flex-row items-center gap-6 text-gray-500 dark:text-gray-400 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
+              <div
+                className="flex flex-col sm:flex-row items-center gap-6 text-gray-500 dark:text-gray-400 animate-fade-in-up"
+                style={{ animationDelay: '0.6s' }}
+              >
                 <div className="flex items-center gap-2 hover:text-orange-500 dark:hover:text-orange-400 transition-colors">
-                  <Zap className="h-5 w-5 text-orange-500" />
-                  <span>No new hardware required</span>
+                  <Sparkles className="h-5 w-5 text-orange-500" />
+                  <span>AI guidance delivered through lightweight smart glasses</span>
+                </div>
+                <div className="flex items-center gap-2 hover:text-orange-500 dark:hover:text-orange-400 transition-colors">
+                  <ShieldCheck className="h-5 w-5 text-orange-500" />
+                  <span>Automated QA scorecards for every interaction</span>
                 </div>
               </div>
             </div>
@@ -141,9 +168,9 @@ export function MarketingLanding() {
               {/* Dashboard Preview */}
               <div className="relative bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-3xl p-4 border border-orange-100 dark:border-orange-900/30 shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-105">
                 <div className="relative overflow-hidden rounded-2xl">
-                  <Image 
+                  <Image
                     src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop"
-                    alt="RetailX Dashboard - Staff Performance and Store Analytics"
+                    alt="Retail associate receiving smart glass coaching and performance analytics"
                     width={1200}
                     height={800}
                     className="w-full h-auto object-cover rounded-2xl shadow-lg"
@@ -155,45 +182,54 @@ export function MarketingLanding() {
                   
                   {/* Floating metrics */}
                   <div className="absolute top-4 left-4 bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm rounded-xl p-3 shadow-lg border border-orange-200/50 dark:border-orange-800/50 animate-bounce-gentle">
-                    <div className="text-sm font-semibold text-orange-600 dark:text-orange-400">Live Analytics</div>
-                    <div className="text-xs text-gray-600 dark:text-gray-400">Real-time insights</div>
+                    <div className="text-sm font-semibold text-orange-600 dark:text-orange-400">Live Coaching</div>
+                    <div className="text-xs text-gray-600 dark:text-gray-400">Real-time prompts</div>
                   </div>
-                  
-                  <div className="absolute top-4 right-4 bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm rounded-xl p-3 shadow-lg border border-orange-200/50 dark:border-orange-800/50 animate-bounce-gentle" style={{ animationDelay: '0.5s' }}>
-                    <div className="text-sm font-semibold text-green-600">+27% Revenue</div>
-                    <div className="text-xs text-gray-600 dark:text-gray-400">This month</div>
+
+                  <div
+                    className="absolute top-4 right-4 bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm rounded-xl p-3 shadow-lg border border-orange-200/50 dark:border-orange-800/50 animate-bounce-gentle"
+                    style={{ animationDelay: '0.5s' }}
+                  >
+                    <div className="text-sm font-semibold text-green-600">+32% CSAT</div>
+                    <div className="text-xs text-gray-600 dark:text-gray-400">This quarter</div>
                   </div>
-                  
-                  <div className="absolute bottom-4 left-4 bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm rounded-xl p-3 shadow-lg border border-orange-200/50 dark:border-orange-800/50 animate-bounce-gentle" style={{ animationDelay: '1s' }}>
-                    <div className="text-sm font-semibold text-blue-600">Staff Performance</div>
-                    <div className="text-xs text-gray-600 dark:text-gray-400">95% efficiency</div>
+
+                  <div
+                    className="absolute bottom-4 left-4 bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm rounded-xl p-3 shadow-lg border border-orange-200/50 dark:border-orange-800/50 animate-bounce-gentle"
+                    style={{ animationDelay: '1s' }}
+                  >
+                    <div className="text-sm font-semibold text-blue-600">Associate Score</div>
+                    <div className="text-xs text-gray-600 dark:text-gray-400">92% compliance</div>
                   </div>
-                  
-                  <div className="absolute bottom-4 right-4 bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm rounded-xl p-3 shadow-lg border border-orange-200/50 dark:border-orange-800/50 animate-bounce-gentle" style={{ animationDelay: '1.5s' }}>
-                    <div className="text-sm font-semibold text-purple-600">Store Comparison</div>
-                    <div className="text-xs text-gray-600 dark:text-gray-400">4 locations</div>
+
+                  <div
+                    className="absolute bottom-4 right-4 bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm rounded-xl p-3 shadow-lg border border-orange-200/50 dark:border-orange-800/50 animate-bounce-gentle"
+                    style={{ animationDelay: '1.5s' }}
+                  >
+                    <div className="text-sm font-semibold text-purple-600">Playbooks Updated</div>
+                    <div className="text-xs text-gray-600 dark:text-gray-400">12 this week</div>
                   </div>
                 </div>
                 
                 {/* Dashboard label */}
                 <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-2 rounded-full text-sm font-semibold shadow-lg animate-pulse">
-                  Live Dashboard Preview
+                  Smart Glass Command Center
                 </div>
               </div>
 
               {/* Additional stats below */}
               <div className="grid grid-cols-3 gap-4 mt-8 animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
                 <div className="bg-white/60 dark:bg-gray-800/60 rounded-xl p-4 text-center backdrop-blur-sm border border-orange-200/50 dark:border-orange-800/50 hover:scale-105 transition-transform duration-300">
-                  <div className="text-2xl font-bold text-orange-600 dark:text-orange-400 animate-bounce-gentle">84%</div>
-                  <div className="text-xs text-gray-600 dark:text-gray-400">Conversion Rate</div>
+                  <div className="text-2xl font-bold text-orange-600 dark:text-orange-400 animate-bounce-gentle">96%</div>
+                  <div className="text-xs text-gray-600 dark:text-gray-400">Service Compliance</div>
                 </div>
                 <div className="bg-white/60 dark:bg-gray-800/60 rounded-xl p-4 text-center backdrop-blur-sm border border-orange-200/50 dark:border-orange-800/50 hover:scale-105 transition-transform duration-300" style={{ animationDelay: '0.1s' }}>
-                  <div className="text-2xl font-bold text-orange-600 dark:text-orange-400 animate-bounce-gentle">+27%</div>
-                  <div className="text-xs text-gray-600 dark:text-gray-400">Revenue Lift</div>
+                  <div className="text-2xl font-bold text-orange-600 dark:text-orange-400 animate-bounce-gentle">40%</div>
+                  <div className="text-xs text-gray-600 dark:text-gray-400">Faster Onboarding</div>
                 </div>
                 <div className="bg-white/60 dark:bg-gray-800/60 rounded-xl p-4 text-center backdrop-blur-sm border border-orange-200/50 dark:border-orange-800/50 hover:scale-105 transition-transform duration-300" style={{ animationDelay: '0.2s' }}>
-                  <div className="text-2xl font-bold text-orange-600 dark:text-orange-400 animate-bounce-gentle">48hrs</div>
-                  <div className="text-xs text-gray-600 dark:text-gray-400">Setup Time</div>
+                  <div className="text-2xl font-bold text-orange-600 dark:text-orange-400 animate-bounce-gentle">24hrs</div>
+                  <div className="text-xs text-gray-600 dark:text-gray-400">Feedback Turnaround</div>
                 </div>
               </div>
             </div>
@@ -204,14 +240,14 @@ export function MarketingLanding() {
         <div className="absolute bottom-0 left-0 right-0 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border-t border-orange-200/50 dark:border-orange-800/50 py-8">
           <div className="max-w-7xl mx-auto px-6 text-center">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-              Ready to Transform Your Store?
+              Ready to Quality-Proof Every Store Visit?
             </h2>
             <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
-              Join hundreds of retailers who have unlocked hidden revenue with RetailX&apos;s AI-powered analytics platform.
+              Join leading retailers who guarantee every shopper interaction is on-brand with RetailX smart glass coaching and QA.
             </p>
             <NextLink href="/chat">
               <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 text-lg rounded-xl font-semibold transform hover:scale-105 transition-all duration-300">
-                Try Demo
+                Watch the Guided Demo
               </Button>
             </NextLink>
           </div>
@@ -223,10 +259,10 @@ export function MarketingLanding() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 animate-fade-in-up">
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-              Get Actionable Insights in 3 Simple Steps
+              Quality-Assure Every Interaction in 3 Simple Steps
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              No disruption, no expensive installation. We integrate seamlessly with what you already have.
+              Launch in weeks—not months. We handle hardware, setup, and privacy so you can focus on your teams and guests.
             </p>
           </div>
 
@@ -254,7 +290,7 @@ export function MarketingLanding() {
           <div className="text-center animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
             <NextLink href="/chat">
               <button className="bg-white dark:bg-gray-900 border-2 border-orange-500 text-orange-600 dark:text-orange-400 hover:bg-orange-500 hover:text-white dark:hover:bg-orange-500 px-8 py-3 rounded-2xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
-                See a Sample Dashboard
+                Preview a Coaching Session
               </button>
             </NextLink>
           </div>
@@ -266,13 +302,11 @@ export function MarketingLanding() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 animate-fade-in-up">
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-              Introducing RetailX: The Eyes and Brains of Your{' '}
-              <span className="bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">
-                Retail Space
-              </span>
+              Meet RetailX Glass:{' '}
+              <span className="bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">Your In-Store QA Partner</span>
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
-              Stop guessing. Start knowing. RetailX transforms your standard camera feeds into a powerful stream of actionable intelligence, revealing the complete customer journey from the sidewalk to the sale.
+              Stop hoping the floor is covered—know it. RetailX combines smart glasses, conversation AI, and actionable analytics to ensure every associate delivers a consistent, premium shopping experience.
             </p>
           </div>
 
@@ -309,19 +343,19 @@ export function MarketingLanding() {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl lg:text-6xl font-bold text-white mb-6 animate-fade-in-up">
-            Ready to See Your Store in a{' '}
-            <span className="bg-gradient-to-r from-orange-200 to-white bg-clip-text text-transparent animate-pulse">
-              New Light?
-            </span>
+            Ready to Coach Every Associate in Real Time?
           </h2>
-          
+
           <p className="text-xl text-orange-100 max-w-3xl mx-auto mb-12 leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            Your physical space is your biggest asset. It&apos;s time to manage it with the same level of data and precision as your website. Schedule a personalized demo today and see the powerful insights hiding in plain sight.
+            Your associates shape the shopping experience. Give them an AI co-pilot that reinforces your playbook, safeguards compliance, and delights every customer. Let us show you how effortless quality assurance can be.
           </p>
 
           <a href="https://calendly.com/gnikhil335/30min" target="_blank" rel="noopener noreferrer">
-            <button className="bg-white hover:bg-orange-50 text-orange-600 px-12 py-6 rounded-2xl font-bold text-xl transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-3xl mb-8 animate-pulse-glow animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-              Book My Free Demo Now
+            <button
+              className="bg-white hover:bg-orange-50 text-orange-600 px-12 py-6 rounded-2xl font-bold text-xl transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-3xl mb-8 animate-pulse-glow animate-fade-in-up"
+              style={{ animationDelay: '0.4s' }}
+            >
+              Book a Smart Glass Demo
             </button>
           </a>
 
